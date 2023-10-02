@@ -1,0 +1,10 @@
+/* body{
+    background-color: yellow;
+} */
+.heading{
+    color: red;
+    font-size:43px ;
+    text-align: center;
+    text-decoration: underline;
+    border: 1px dotted;
+}

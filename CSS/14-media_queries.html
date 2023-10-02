@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        /* 
+        screen size:
+        -Larger screen 1440px
+        -Normal screen 1024px
+        -Tablet screen 768px
+        -Mobile screeen 425px
+        */
+        .container{
+            display: flex;
+        }
+        .box{
+            height: 350px;
+            width: 350px;
+            border: 2px solid black;
+            margin: 2px;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box3{
+            background-color: yellow;
+        }
+        @media screen and (max-width:425px){
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+        }
+        @media screen and (min-width:426px) and (max-width:768px){
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                /* flex-direction: row; */
+                justify-content: center;
+            }
+        }
+        @media screen and (min-width:769px) and (max-width:1440px){
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+   </div> 
+</body>
+</html>

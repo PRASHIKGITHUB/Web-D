@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and it's properties</title>
+</head>
+<body>
+    <!-- Table -->
+    <table border bordercolor="red" cellpadding="16px" cellspacing="5px" >
+        <thead>
+            <tr>
+                <th>Sr. No</th>
+                
+                <!-- th=table heading -->
+                <th>subject 1</th>
+                <th>subject 2</th>
+                <th>subject 3</th>
+    
+            </tr>
+        </thead> <!--table head-->
+        
+        <!-- tr=table row -->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>English</td>
+                <td>PDS</td>
+                <td>Computer</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>English</td>
+                <td>PDS</td>
+                <td>Computer</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>English</td>
+                <td>PDS</td>
+                <td>Computer</td>
+            </tr>
+        </tbody> <!--table body-->
+
+        <tfoot>
+            <th colspan="4">result: pass</th>
+        </tfoot> <!--table foot-->
+        
+    </table>
+
+<!-- **************************************** -->
+
+    <table border cellpadding="16px" cellspacing="5px" >
+        <tr>
+            <th>Sr. No</th>
+            <!-- th=table heading -->
+            <th>subject 1</th>
+            <th>subject 2</th>
+            <th>subject 3</th>
+
+        </tr>
+        <!-- tr=table row -->
+        <tr>
+            <!-- td=table data -->
+            <td>1</td>
+            <td>English</td>
+            <td colspan="2">PDS</td>
+           
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>English</td>
+            <td>PDS</td>
+            <td rowspan="2">Computer</td>
+        </tr>
+        <tr>
+            
+            <td>3</td>
+            <td>English</td>
+            <td>PDS</td>
+            
+        </tr>
+    </table>
+</body>
+</html>

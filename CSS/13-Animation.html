@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations ka gyan</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid black;
+        }
+        .box{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border: 2px solid yellow;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation-name: rightMovement;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 2s; */
+            animation-timing-function: linear;
+            animation-direction:alternate;
+            animation-duration: 2s;
+            /* animation-fill-mode: forwards; */
+        }
+        
+        @keyframes rightMovement {
+            from{
+                top: 0px;
+                left: 0px;
+            }
+            to{
+                top: 0px;
+                left: 1400px;
+            }
+        }
+        .titu{
+            background-color: lightcoral;
+            height: 200px;
+            width: 200px;
+            animation-name: hello;
+            position: relative;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            /* animation-iteration-count: infinite; */
+            /* animation-timing-function: cubic-bezier(0,.96,.8,.23); */
+            animation-fill-mode: forwards;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes hello {
+            0%{
+                top: 0;
+                left: 0%;
+                background-color: lightcoral;
+                rotate: 0deg;
+            }
+            50%{
+                top: 0;
+                left: 75%;
+                background-color: lightgreen;
+                rotate: 360deg;
+            }
+            100%{
+                top: 500px;
+                left: 75%;
+                background-color: lightseagreen;
+                border-radius: 50%;
+                rotate: -360deg;
+                box-shadow: 10px 5px 5px rgb(108, 99, 99);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="titu">
+
+        </div>
+    </div>
+
+</body>
+</html>

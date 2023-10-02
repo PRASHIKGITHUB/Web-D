@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        *{
+            box-sizing: border-box; /*box size parent ke jitna ho jayega*/
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /* margin: 15px 30px; */
+            font-size: 17px;
+            /* padding: 8px; */
+        }
+        .container{
+            background-color: #afa7b1;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgray;
+            border-radius: 9px;
+            /* background-image: url(oppenheimer-cillian-3158x5000-11403.jpg); */
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid violet;
+            border-radius: 8px;
+            margin: 8px;
+        }
+
+        fieldset{
+            background-color: #fff;
+            border: 1px solid violet;
+            border-radius: 8px;
+        }
+        .main_heading{
+            text-align: center;
+        }
+        input[type="submit"]{
+            border: 1px solid violet;
+            border-radius: 5px;
+            background-color: rgba(161, 221, 207, 0.697);
+            padding: 12px 10px;
+            font-size: 20px; /*This works*/
+            cursor: grab;
+        }
+        .submit{
+            
+            text-align: center;
+            font-size: 20px;/*this dont work*/
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(68, 208, 50);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form  action="">
+            <h1 class="main_heading">Payment Form</h1>
+            <hr>
+            <h2>Contact information</h2>
+            <!-- Name -->
+            <p>
+                Name:*<input type="text" name="name" placeholder="write your name" required>
+            </p>
+            <!-- Gender -->
+            <fieldset  >
+                <legend>Gender</legend>
+                <p>
+                    Male: <input type="radio" name="gender" id="male"required >
+                    Female: <input type="radio" name="gender" id="female" required>
+                    <!-- name should be same to choose singel option -->
+                </p>
+            </fieldset>
+            <!-- address -->
+            <p>
+                Address: <textarea name="address" id="" cols="30" rows="10" placeholder="Address"></textarea>
+            </p>
+            <!-- Email -->
+            <p>
+                Email:* <input type="email" name="email" id="email" placeholder="abc@gmail.com" required>
+            </p>
+            <!-- Pincode -->
+            <p>
+                Pincode:* <input type="number" name="pincode" id="pincode" placeholder="123456" required>
+            </p>
+    
+            <h2>Payment Information</h2>  
+            <!-- card type -->
+            <p>
+                card Type:
+                <select name="card_type" id="card_type">
+                    <option value="">--Select a card Type</option>
+                    <option value="Rupay">Rupay</option>
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="Visa">Visa</option>
+                </select>
+            </p>
+            <!-- card number -->
+            <p>
+                Card Number: <input type="number" name="card number" id="card number" placeholder="1111-2222-3333-4444">
+            </p>
+            <!-- Expiry date -->
+            <p>
+                Expiration Date: <input type="date" name="exp date" id="exp date">
+            </p>
+            <!-- CVV -->
+            <p>
+                CVV: <input type="password" name="CVV" id="CVV" placeholder="123">
+            </p>
+            <!-- submit -->
+            <div class="submit">
+                <input type="submit" value="Pay Now">
+            </div>
+            
+            
+        </form>
+    </div>
+    
+</body>
+</html>

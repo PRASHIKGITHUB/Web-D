@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivness</title>
+    <style>
+        html{
+            font-size: 1em;
+        }
+        @media screen and (max-width:600px) {
+            body{
+                color:red;
+            }
+        }
+        @media (orientation:landscape){
+            body{
+                color: rebeccapurple;
+            }
+        }
+        @media screen and (max-width:600px) and (orientation:landscape) {
+            /* and property */
+            body{
+                color:rgb(43, 226, 46)
+            }
+        }
+        @media screen and (max-width:600px),screen and (orientation:landscape) {
+            /* or property */
+            body{
+                color: tomato;
+            }
+        }
+        @media not all and (orientation:landscape){
+            body{
+                color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minus commodi at ad eligendi harum deserunt magnam iusto alias quis quos inventore perspiciatis veniam porro, placeat architecto excepturi autem. Vero minima rem illum expedita, illo alias quia, impedit numquam incidunt, ea recusandae suscipit consequuntur asperiores accusantium facilis eos fuga maiores! ouij</p>
+</body>
+</html>

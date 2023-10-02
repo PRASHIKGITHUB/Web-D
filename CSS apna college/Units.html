@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        /* 1rem is 16px default and it's relative to root element
+          em is relative to parent element
+        */
+        html{
+            font-size: 25px;
+            
+
+        }
+        *{
+            margin: 0px;
+        }
+        .container{
+            font-size: 40px;
+            border: 2px solid red;
+            height: 100vh;
+            /* width: 100vw; */
+        }
+        .x{
+            font-size: 2em; /*Twice of 40px that is parent font size*/
+            padding: 2em; /* padding=2*2*40px=160px */
+        }
+        .y{
+            font-size: 2rem;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        H
+        <div class="x">H</div>
+        <div class="y">Y</div>
+    </div>
+</body>
+</html>

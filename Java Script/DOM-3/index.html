@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-3</title>
+    <style>
+        #box{
+            height: 300px;
+            width: 300px;
+            background-color: yellowgreen;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>hello prashik</h1>
+    <p id="js">hello pc </p>
+    <button onclick="hey()" id="css">Submit</button>
+    <div id="box">
+
+    </div>
+    <script>
+        document.getElementById("js").addEventListener("click",fun) //kya ho, kisko call krna hai
+        function fun(){
+            document.getElementById("js").innerText="Namaste prashik"
+        }
+        function hey(){
+            document.getElementById("css").innerText="Not Submit";
+            document.getElementById("css").style.color="hotpink";
+            document.getElementById("css").style.backgroundColor="orange";
+            document.getElementById("css").style.padding="10px";
+            document.getElementById("css").style.border="2px solid green";
+            document.getElementById("css").style.borderRadius="4px";
+        }
+        var xy=document.getElementById("box")
+        
+        // xy.innerHTML="<h1>Hello</h1>"
+        xy.textContent="<h1>Hello</h1>"
+    </script>
+</body>
+</html>

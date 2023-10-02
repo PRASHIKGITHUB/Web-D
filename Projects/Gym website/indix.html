@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashik's Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        font-family: 'Mukta', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url('assets/1080p-3qmj7oaige168170.jpg');
+       /* height: 1080px;
+       width: 1920px; */
+    }
+    .left{
+        /* margin: 2px; */
+        border: 2px solid rgb(173, 55, 171);
+        border-radius: 3px;
+        display: inline-block;
+        width: 100px;
+        position: absolute;
+        height: 100px;
+        top: 18px;
+        left:70px;
+        font-size: 17px;
+        
+    }
+    .left img{
+        width: 50px;
+        position: absolute;
+        top: 20px;
+        left: 22px;
+        
+        /* filter: invert(100%); */
+    }
+    .left div{
+        color: rgb(12, 251, 8);
+        font-weight: 800;
+        position: absolute;
+        top: 80px;
+        text-align: center;
+        line-height: 7px;
+    }
+    .mid{
+        display: block;
+        width: 700px;
+        /* text-align: center; */
+        margin:10px auto;
+        /* margin: 2px; */
+        border-radius: 10px;
+        border: 2px solid slateblue;
+        font-size: 25px;
+    }
+    .right{
+        position: absolute;
+        top: 45px;
+        right: 20px;
+        margin: 2px;
+        border-radius: 3px;
+        border: 2px solid plum;
+        display: inline-block;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        color: rgb(0, 255, 255);
+        text-decoration: none;
+        padding: 15px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        color: brown;
+        text-decoration: underline;
+        font-size: 27px;
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 3px;
+        border: 2px solid magenta;
+        border-radius: 8px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="assets/istockphoto-1331186720-612x612.jpg" alt="">
+            <div>Prashik's Gym</div>
+            
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            
+            <ul class="navbar">
+                <li><a class="active" href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Fitness Calculator</a></li>
+                <li><a href="">Contact Us</a></li>
+                
+            </ul>
+        </div>
+        <!-- rigth box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+</body>
+</html>

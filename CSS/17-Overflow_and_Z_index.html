@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overfolw and Z index</title>
+    <style>
+        p{
+            height: 250px;
+            width: 250px;
+            border: 2px solid red;
+            overflow: auto;
+            /* overflow: scroll; */
+            /* overflow: hidden; */
+            z-index:4;
+        }
+        .one{
+            height: 50px;
+            width: 50px;
+            background-color: rgba(255, 0, 0, 0.307);
+            position: absolute;
+            top: 0;
+            z-index: 6;
+        }
+        .two{
+            height: 50px;
+            width: 50px;
+            background-color: rgba(255, 255, 0, 0.52);
+            position: absolute;
+            top: 0;
+            left: 15px;
+            z-index: 7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Overflow -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laboriosam est animi quae, neque sint quibusdam dolore aliquam dicta nisi tenetur assumenda. Blanditiis magni consequuntur aliquid at ex molestias quam excepturi aperiam sequi? Nobis ipsa vel unde odit debitis velit exercitationem quaerat? Debitis enim vitae eaque sint fugit. Ea recusandae assumenda cupiditate quasi quod esse libero provident praesentium amet dolor sunt obcaecati facilis porro eius fuga magni, laborum minima sed necessitatibus tempore debitis autem eaque molestias voluptatem? Tempore repellat dolor consequuntur eligendi nemo possimus aliquid nostrum similique asperiores est dolorem exercitationem ut doloribus inventore, maxime delectus vitae illum dignissimos voluptatum!</p>
+    <!-- Z-index -->
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>

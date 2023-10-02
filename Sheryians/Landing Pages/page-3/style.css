@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(31, 36, 33, 0.758);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main img{
+    height: 700px;
+    position: relative;
+    z-index: 99;
+    border-radius: 10px;
+}
+#scroll-div1{
+    position: absolute;
+    top: 20%;
+    
+    width: 100%;
+    /* height: 100px; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scroll-div1 h1{
+    font-size: 135px;
+    display: inline-block;
+    margin-right:30px ;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+#scroll-div1::-webkit-scrollbar{
+    display: none;
+}
+
+
+#scroll-div2{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    /* height: 100px; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    z-index: 100;
+}
+#scroll-div2 h1{
+    font-size: 135px;
+    display: inline-block;
+    margin-right:30px ;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    color: transparent;
+    margin-right:30px ;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    
+    
+}
+#scroll-div2::-webkit-scrollbar{
+    display: none;
+}
+
+
+#scroll-div3{
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    /* height: 100px; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scroll-div3 h1{
+    font-size: 135px;
+    display: inline-block;
+    margin-right:30px ;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: reverse; */
+}
+#scroll-div3::-webkit-scrollbar{
+    display: none;
+}
+
+#text-div{
+    position: absolute;
+    z-index: 999;
+    width: 50%;
+    top: 3%;
+    color:rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif; 
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100% - 32px));
+    }
+}

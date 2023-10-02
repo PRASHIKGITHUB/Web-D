@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        h1{
+            font-size: 100px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 800;
+            position: relative;
+        }
+        html,body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+        h1::after{
+            content:"";
+            position: absolute;
+            width: 100%;
+            background-color: black;
+            height: 10px;
+            bottom: 0;
+            left: 0;
+        }
+        h1:hover::after{
+            animation-name: line;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+
+        }
+        @keyframes line {
+            0%{
+                width: 0;
+                left: 0;
+            }
+            50%{
+                width: 100%;
+                left: 0;
+            }
+            100%{
+                width: 0;
+                left: 100%;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Youtube!</h1>
+</body>
+</html>

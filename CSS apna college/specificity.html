@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepcificity</title>
+    <link rel="stylesheet" href="specificity.css">
+    <style>
+        *{
+            background-color: hotpink;
+        }
+        
+        ul#summer-drinks li.favourite{
+            color: red;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        ul#summer-drinks li{
+            font-size: 12px;
+            color: black;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <ul id="summer-drinks">
+       <li>Mountain Dew</li>
+       <li class="favourite" style="color: blanchedalmond;">Appy Fizz</li>
+       <li>Jeeru</li>
+    </ul>
+</body>
+</html>

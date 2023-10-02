@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px 200px 200px ; */
+            /* grid-template-rows: 200px 200px 200px 200px 200px ; */
+            /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+            grid-gap: 20px; /*cloum as well as row gap*/
+            /* column size is not fixed if we add more content in dabba 1 the size will increase */
+            grid-auto-rows: 100px; /*-->height is getting managed and fixed*/
+            /* now the content will overflow */
+            grid-auto-columns: 50px;
+            grid-auto-rows: minmax(100px,auto); /*min height 100px and will increase according to content*/
+            grid-auto-columns: minmax(300px,auto);
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); /*increase responsivness*/
+            /* column-gap: 120px;
+            row-gap: 120px; */
+
+        }
+        .items{
+            background-color: lightcoral;
+            border: 3px green solid;
+            border-radius: 3px;
+        }
+        #item-1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        /* #item-2{
+            grid-row-start:2 ;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        } */
+        .item-1-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 8px;
+            
+        }
+        .nested-item{
+            border: 3px solid greenyellow;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1-container" id="item-1">
+            <div class="nested-item">Dabbe me dabba 1</div>
+            <div class="nested-item">Dabbe me dabba 2</div>
+            <div class="nested-item">Dabbe me dabba 3</div>
+        </div>
+        <div class="items" id="item-2">dabba 2</div>
+        <div class="items">dabba 3</div>
+        <div class="items">dabba 4</div>
+        <div class="items">dabba 5</div>
+        
+    </div>
+</body>
+</html>

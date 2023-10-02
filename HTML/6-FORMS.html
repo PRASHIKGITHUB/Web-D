@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walkthrough of FORMS</title>
+</head>
+<body>
+    <form action="">
+        <!-- the usecase of id is in frontend -->
+        <!-- name attribute is used to tell at server side that it's name -->
+
+        <!-- input type text -->
+        <label for="name">please enter your name:</label>
+        <input type="text" id="name" name="user name">
+        <br>
+        <label for="address">please enter your address:</label>
+        <textarea name="user address" id="address" cols="30" rows="10"></textarea>
+        <br>
+        <!-- input type date -->
+        <label for="dob"></label>
+        <input type="date" name="user dob" id="dob">
+        <br>
+        <!-- input type password -->
+        <label for="password">Enter your password:</label>
+        <input type="password" id="password" name="userpassword">
+        <br>
+        <!-- input type radio -->
+        <!-- for selection of only one gender type name should be same otherwise it won't work -->
+        Select gender:
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender">
+        <!-- name attribute should have same type -->
+        <br>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender">
+        <br>
+        Select favourite movies: <br>
+        <!-- label gives functionality of giving input while clicking on avengers -->
+        <label for="avengers">avengers</label>
+        <input type="checkbox" name="avengers" id="avengers">
+        <br>
+        <label for="ironman">ironman</label>
+        <input type="checkbox" name="avengers" id="ironman">
+        <br>
+        <label for="batman">batman</label>
+        <input type="checkbox" name="batman" id="avengers">
+        <br>
+        <label for="submit">Submit qurey</label>
+        
+        <input type="submit" name="" id="submit">
+
+    </form>
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+    <form method="get" target="_blank" action="/signup">
+        <!-- post method can be used instead of get and it's more secure -->
+        <!-- action attribute is used to differentiate between forms -->
+        <!-- this get attribute will feed data to url -->
+        <!-- target attribute is used to open new tab after submission -->
+        <fieldset>
+            <legend>user details!!</legend>
+            <!-- the usecase of id is in frontend -->
+        <!-- name attribute is used to tell at server side that it's name -->
+
+        <!-- input type text -->
+        <label for="name">please enter your name:</label>
+        <input type="text" id="name" name="user name" value="prashik" readonly disabled >
+        <!-- if we use disabled attribute the user cannot even highlight the input box -->
+        <!-- readonly is an attribute which takes nothing but not allow user to change name -->
+        <!-- here value attribute is used for default name not like in radio type -->
+        <br>
+        <label for="address">please enter your address:</label>
+        <textarea name="user address" id="address" cols="30" rows="10"></textarea>
+        <br>
+        <!-- input type date -->
+        <label for="dob"></label>
+        <input type="date" name="user dob" id="dob">
+        <br>
+        <!-- input type password -->
+        <label for="password">Enter your password:</label>
+        <input type="password" id="password" name="userpassword" autofocus>
+        <!-- autofocus attribute directly take cursor to fill password at first site, NOTE:first autofocus will be used if multiple times it is being used -->
+        <br>
+        <!-- input type radio -->
+        <!-- for selection of only one gender type name should be same otherwise it won't work -->
+        Select gender:
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" value="male" name="gender" checked="">
+        <!-- Checked attribute is used -->
+        <br>
+        <label for="female">Female</label>
+        <input type="radio" value="female" id="female" name="gender">
+        <br>
+        Select favourite movies: <br>
+        <!-- label gives functionality of giving input while clicking on avengers -->
+        <!-- value attribute will feed  -->
+        <label for="avengers">avengers</label>
+        <input type="checkbox" value="avengers" name="favourite movie" id="avengers">
+        <br>
+        <label for="ironman">ironman</label>
+        <input type="checkbox" value="ironman" name="favourite movie" id="ironman">
+        <br>
+        <label for="batman">batman</label>
+        <input type="checkbox" value="batman" name="favourite movie" id="avengers">
+        <br>
+        <label for="submit">Submit qurey</label>
+        <input value="submit form"  type="submit" name="" id="submit">
+        <!-- value attribute=is to give name inside submit button -->
+        <!--  email input-->
+        <!-- name attribute is basically dipicts type of options -->
+        <br>
+        <label for="email">enter your email</label>
+        <input type="email" id="email" placeholder="a@example.com" name="email">
+        <br>
+        Please enter a number:
+        <input type="number" min="0" max="7">
+        <br>
+        Please enter your Country:
+        <select name="" id="">
+            <optgroup label="Asia">
+                <option value="">India</option>
+                <option value="">Pakistan</option>
+
+            </optgroup>
+            <option value="">Us</option>
+        </select>
+        <br>
+        File  Input:
+        <input type="file">
+        <br>
+        color:
+        <input type="color" name="color">
+        <br>
+        Email:
+        <input type="email" required="">
+        <!-- Required attribute is used -->
+        <br>
+        Password:
+        <input type="password" name="password" autofocus="" maxlength="12">
+        <!-- Auto focus attribute is used -->
+        <!-- Max length attribute is used -->
+        <br>
+        Date:
+        <input type="date" name="date">
+        <br>
+        Date Time:
+        <input type="datetime-local" name="" id="">
+        <br>
+        Month:
+        <input type="month">
+        <br>
+        Week:
+        <input type="week">
+        <br>
+        Range:
+        <input type="range">
+        <input type="submit" value="submit form">
+        <input type="reset">
+
+        </fieldset>
+    </form>
+</body>
+</html>

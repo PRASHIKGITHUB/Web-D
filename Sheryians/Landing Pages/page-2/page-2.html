@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page-2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        #main{
+            height: 100%;
+            display: flex;
+        }
+        #left{
+            width: 40%;
+            height: 100%;
+            background-color: antiquewhite;
+            position: relative;
+        }
+        #right{
+            width: 60%;
+            height: 100%;
+            
+            
+        }
+        #right-bottom{
+            width: 100%;
+            height: 50%;
+            background-image: url(https://images.unsplash.com/photo-1619241638225-14d56e47ae64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80);
+            background-position: center;
+            background-size: cover;
+        }
+        #right-top{
+            height: 50%;
+            width: 100%;
+            
+            display: flex;
+        }
+        #right-top-left{
+            width: 60%;
+            background-image: url(https://images.unsplash.com/photo-1552089123-2d26226fc2b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80);
+            background-size: cover;
+            background-position: center;
+        }
+        #right-top-right{
+            width: 40%;
+            background-image: url(https://images.unsplash.com/photo-1586788224331-947f68671cf1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);
+            background-position: center;
+            background-size: cover;
+        }
+        #nav{
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #right-nav a{
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            font-weight: 500;
+        }
+        #right-nav i{
+            margin-left: 20px;
+            color: rgb(71, 159, 171);
+        }
+        #right-nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #left #center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #center h1{
+            font-size: 90px;
+            font-weight: 900;
+        }
+        #center p{
+            opacity: 0.6;
+            line-height: 20px;
+            font-size: 20px;
+            margin-top:20px ;
+            margin-bottom: 20px;
+        }
+        #center a{
+            text-decoration: none;
+            color: black;
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+            opacity: .6;
+            font-size: 20px;
+        }
+        @media screen and (max-width:600px){
+            #main{
+                flex-direction: column;
+            }
+            #left{
+                width: 100%;
+            }
+            #right{
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="left">
+            <div id="nav">
+                <i class="fa-solid fa-arrow-left"></i>
+                <div id="right-nav">
+                    <a href="">Home</a>
+                    <a href="">Work</a>
+                    <i class="fa-brands fa-twitter"></i>
+                    
+                </div>
+            </div>
+            <div id="center">
+                <h1>Hello,</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, placeat. Animi voluptatem veritatis nobis</p>
+                <a href="">Read More</a>
+            </div>
+        </div>
+        <div id="right">
+            <div id="right-top">
+                <div id="right-top-left"></div>
+                <div id="right-top-right"></div>
+            </div>
+            <div id="right-bottom">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

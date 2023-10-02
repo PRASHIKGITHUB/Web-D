@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body,html{
+            height: 100%;
+            width: 100%;
+        }
+        #main{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(114, 88, 101,0.881);
+            display: flex;
+        }
+        #part1{
+            height: 100%;
+            width: 26%;
+            /* background-color: red; */
+        }
+        #part2{
+            height: 100%;
+            width: 67%;
+            background-color: red;
+            background-image: url(IMG_20230711_223356.jpg);
+            background-size: cover;
+            background-position:top;
+        }
+        #overlay{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(131, 119, 122, 0.38);
+        }
+        #overlay-in{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(131, 119, 122, 0.21);
+        }
+        #part3{
+            height: 100%;
+            width: 7%;
+            /* background-color: red; */
+        }
+        #div-text{
+            position: absolute;
+            height: 300px;
+            width: 400px;
+            left: 10%;
+            top: 50%;
+
+            transform: translate(0,-50%);
+        }
+        #div-text>h1{
+            font-size: 79px;
+            font-family: 'Inter', sans-serif;
+            font-weight:900;
+            line-height: 76px;
+            text-transform: uppercase;
+            color: white;
+            /* letter-spacing: 20px; */
+            
+        }
+        #div-text h1{
+            background-image: url(https://plus.unsplash.com/premium_photo-1671751035347-e308f0a19b28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1412&q=80);
+            color: transparent;
+            background-position: center;
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+
+        }
+        #small-image-div{
+            height: 400px;
+            width: 300px;
+            background-image: url(IMG_20230711_224016.jpg);
+            position: absolute;
+            background-size:cover;
+            background-position: center;
+            top: 50%;
+            right: 3%;
+            transform: translate(0,-50%);
+            border-radius: 10px;
+        }
+        #vertical-text{
+            position: absolute;
+            transform: rotate(90deg);
+            right: -46%;
+            top: 2%;
+            
+            
+            transform-origin: 0% 0%;
+
+        }
+        #vertical-text h1{
+            font-size: 85px;
+            font-weight: bolder;
+            letter-spacing: 5px;
+            font-family: 'Inter', sans-serif;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: white;
+            color: transparent;
+            text-transform: uppercase;
+            background-image: url();
+
+        }
+        #nav{
+            position: absolute;
+            width: 350px;
+            /* background-color: red; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            left: 10%;
+            top: 5%;
+        }
+        #nav img{
+            height: 60px;
+        }
+        #nav h5{
+            font-size: 20px;
+            font-family: 'Lunasima', sans-serif;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <img src="https://www.chungiyoo.com/img/faces/smile%2001.svg" alt="">
+            <h5>Prashik Bahadure</h5>
+        </div>
+        <div id="part1"></div>
+        <div id="part2">
+            <div id="overlay">
+
+            </div>
+        </div>
+        <div id="part3"></div>
+        <div id="div-text">
+            <h1>Prashik</h1>
+            
+            
+        </div>
+        <div id="small-image-div">
+            <div id="overlay-in"></div>
+        </div>
+        <div id="vertical-text">
+            <h1>Selection Winter</h1>
+        </div>
+    </div>
+</body>
+</html>

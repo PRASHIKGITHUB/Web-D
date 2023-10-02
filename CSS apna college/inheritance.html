@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: rgb(210, 158, 80);
+        }
+        .class1 a{
+            color: inherit; /*body se inherit hua hai color*/
+        }
+        .class2{
+            color: initial;
+        }
+        .class3{
+            color: unset;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Default <a href="#">Link</a>color</li>
+        <li class="class1">Inherited <a href="#">Link</a>color</li>
+        <li class="class2">Initial <a href="#">Link</a>color</li>
+        <li class="class3">Unset <a href="#">Link</a>color</li>
+    </ul>
+</body>
+</html>

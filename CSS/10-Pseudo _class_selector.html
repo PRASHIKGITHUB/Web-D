@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class selector</title>
+    <style>
+        .hover:hover{
+            /* generally used on links and buttons */
+            background-color: pink;
+            color: white;
+        }
+        a:hover{
+            color: pink;
+            
+        }
+        a:active{
+            color: brown;
+            /* jab user click karta hai tab ke properties */
+        }
+        a:visited{
+            /* yek bar user visit kar le tho uske bad ke properties */
+            /* visit karne ke bad sabse jyada priority visited ki ho jati hai like active and hover kam karna band kar deta hai */
+            color: black;
+        }
+        /* instead of hover you could have write p tag */
+        .hello:focus{
+            /* generally used while taking input */
+            /* instead of .hello ychu input */
+            color: red;
+            background-color: black;
+            font-size: 25px;
+        }
+        a:first-child{
+            background-color: yellow; 
+        }
+        a:nth-child(3){
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <!-- Pseudo Class -->
+    <p class="hover">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, consequatur.</p>
+    <input  class="hello" type="text">
+    <hr>
+    <a href="https://www.google.com/">Google</a>
+    <nav>
+        <!-- first child of nav tag -->
+        <a href="https://www.google.com/">Google</a>
+        <!-- second child of nav tag -->
+        <br>
+        <!-- third child of nav tag -->
+        <a href="https://www.google.com/">Google</a>
+    </nav>
+</body>
+</html>

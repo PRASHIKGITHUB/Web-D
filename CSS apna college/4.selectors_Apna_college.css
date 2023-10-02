@@ -1,0 +1,49 @@
+p{
+    color: green;
+}
+a{
+    color: blueviolet;
+}
+li{
+    list-style-type: none;
+}
+.special{
+    color: orangered;
+    font-weight: bold;
+}
+span.special,li.special{
+    color: blue;
+}
+/* li ke ander ke em */
+li em{
+    color: rgb(148, 98, 172);
+}
+h1+p{
+    font-size: 200%;
+}
+a:hover{
+    color: brown;
+    text-decoration: none;
+}
+/* body ke ander ke h1+p ke ander ka special class */
+body h1+p .special{
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+}
+
+li[class]{
+    font-size: 300%;
+}
+/* select attributes having a classes */
+li[class~="a"]{
+
+    color: red;
+}
+
+#heading{
+    background-color: pink;
+}
+p#one{
+    background-color: purple;
+}

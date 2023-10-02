@@ -1,0 +1,53 @@
+/* Universal Selector -> selects every tags*/ 
+*{
+    margin:0;
+    padding:0;
+}
+/* Element Selector */
+h1{
+    color:#808080;
+}
+p{
+    color:red;
+}
+/* Class Selector */
+.prashik{
+    color:aquamarine;
+}
+.hello{
+    font-size: 60px;
+    color: blueviolet;
+}
+/* ID Selector */
+#id1{
+    color: whitesmoke;
+    background-color: rgb(101, 159, 206);
+}
+/* Selector list */
+.class1,.class7, .class10,p,#id1{
+    color: black;
+}
+/* Descendent Selector-->main ke ander ke p */
+main p{
+    color:blueviolet ;
+}
+/* Child selector h1 ke ander ke sare p select karega*/
+h1>p{
+    color: aquamarine;
+}
+/* Adjacent sibling selector */
+section + p{
+    color: yellowgreen;
+}
+/* General sibling selector */
+section ~ p{
+    color: yellowgreen;
+}
+/* Attribute selector */
+[target="_blank"]{
+    color: pink;
+    text-decoration: none;
+}
+[alt="image nhi mil rhi"]{
+    background-color: black;
+}

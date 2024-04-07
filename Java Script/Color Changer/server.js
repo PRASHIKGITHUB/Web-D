@@ -4,5 +4,5 @@ function change(){
     for(let i=0;i<6;i++){
         cons=cons+val[Math.floor(Math.random()*16)];
     }
-    document.body.style.backgroundColor=cons;
+    document.button.style.backgroundColor=cons;
 };

@@ -40,12 +40,12 @@
 /* 
 Laptops
 */
-body{
-    background-color: yellowgreen;
-}
-div::after{
-    content: 'Laptops'
-}
+    body{
+        background-color: yellowgreen;
+    }
+    div::after{
+        content: 'Laptops'
+    }
 }
 
 @media(min-width:1200px){/*beyond 1200px*/

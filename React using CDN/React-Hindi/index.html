@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React using CDN</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        const Bt=()=>React.createElement("button",{id:'btn'},React.createElement("span",{},"Submit"));
+        // it just define not render
+        // <button id="btn">
+        //     <span>
+        //         Submit
+        //     </span>
+        // </button>
+        const rootContainer=document.getElementsByClassName("root");
+        const root=ReactDOM.createRoot(rootContainer);
+        root.render(Bt());
+    </script>
+</body>
+</html>

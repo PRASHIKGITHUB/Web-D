@@ -1,0 +1,28 @@
+.scroll-container {
+    position: relative;
+    width: 300px; /* Adjust container width as needed */
+    height: 300px; /* Adjust container height as needed */
+    overflow: hidden;
+}
+
+.scroll-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 100px; /* Adjust card width as needed */
+    height: 100px; /* Adjust card height as needed */
+    background-color: lightblue;
+    border-radius: 50%; /* Make cards circular */
+    margin: 5px; /* Adjust margin between cards as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
